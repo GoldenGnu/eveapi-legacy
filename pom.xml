@@ -10,7 +10,7 @@
 	<url>http://eveapi.googlecode.com/</url>
 	<distributionManagement>
 		<repository>
-			<id>repo</id>
+			<id>eveapi.googlecode.com</id>
 			<name>EveAPI Maven Repository</name>
 			<url>https://eveapi.googlecode.com/svn/artifacts/maven</url>
 		</repository>
@@ -186,7 +186,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.1</version>
+				<version>2.4.1</version>
+				<configuration>
+					<releaseProfiles>production</releaseProfiles>
+					<goals>jar:test-jar javadoc:jar javadoc:test-jar source:jar source:test-jar deploy assembly:single</goals>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
