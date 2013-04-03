@@ -12,8 +12,13 @@
 		<repository>
 			<id>eveapi.googlecode.com</id>
 			<name>EveAPI Maven Repository</name>
-			<url>https://eveapi.googlecode.com/svn/artifacts/maven</url>
+			<url>https://eveapi.googlecode.com/svn/m2/releases</url>
 		</repository>
+		<snapshotRepository>
+			<id>eveapi.googlecode.com</id>
+			<name>EveAPI Maven Repository</name>
+			<url>https://eveapi.googlecode.com/svn/m2/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 	<licenses>
         <license>
